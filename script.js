@@ -45,6 +45,7 @@ function createPassword() {
   let password = "";
 
   // Garantiert mindestens ein Zeichen aus jedem Zeichentyp
+  //„Nimm einen zufälligen Großbuchstaben und hänge ihn an das Passwort an.“
   password += CHARSETS.upper[Math.floor(Math.random() * CHARSETS.upper.length)];
   password += CHARSETS.lower[Math.floor(Math.random() * CHARSETS.lower.length)];
   password +=
@@ -71,5 +72,5 @@ function createPassword() {
 
 function copyPassword() {
   passwordBox.select();
-  document.execCommand("copy");
+  document.execCommand("copy"); // Kopiert den markierten Text in die Zwischenablage.
 }
