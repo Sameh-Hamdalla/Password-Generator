@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;  /* Breite (width) und Höhe (height) schließen padding und border mit ein */ 
+}
+
+body{
+    background: #244153;
+    /* background-color: black; */
+    color: rgb(107, 168, 83);  /* Schrift Text */
+
+}
+
+.container{
+
+    margin: 100px auto;  
+    /* oben und unten 100 // rechts und links auto */
+    width: 90%;
+    max-width: 700px;
+    
+}
+.display{
+
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #c9b8b8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.container h1{
+
+    font-weight: 500;
+    font-size: 45px;
+    border-bottom: 4px ;
+    padding-bottom: 7px;
+}
+.display input{
+    border-radius: 5px;
+    font-size: 25px;
+    border: 0;
+    /* Der sichtbare Kasten um das Input-Feld verschwindet also entfernt den Rahmen */
+    outline: 0;
+    /* Entfernt die Fokus-Umrandung, die erscheint, wenn du klickst oder mit Tab navigierst */
+    
+}
+.display img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.generate-btn {
+  display: flex;
+  align-items: center;      /* vertikal zentrieren */
+  justify-content: center;  /* horizontal zentrieren */
+  gap: 10px;                /* Abstand zwischen Icon & Text */
+
+  padding: 15px 25px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  background: rgb(107, 168, 83);
+  cursor: pointer;
+
+}
+.generate-btn:hover{
+    background-color: rgb(62, 138, 138);
+}
+.generate-btn img{
+    width: 25px;
+    height: 30px;
+   
+}
+.container button{
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background: rgb(107, 168, 83);;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+
+}
