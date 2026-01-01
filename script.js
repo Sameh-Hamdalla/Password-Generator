@@ -67,7 +67,6 @@ function createPassword() {
 
   // Ausgabe des generierten Passworts im Input-Feld
   passwordBox.value = password;
-  console.log();
 }
 
 function copyPassword() {
